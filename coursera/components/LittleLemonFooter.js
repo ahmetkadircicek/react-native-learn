@@ -4,17 +4,17 @@ import { View, Text } from "react-native";
 export default function LittleLemonHeader() {
   return (
     <View
-      style={{ backgroundColor: "#F3D031", paddingTop: 60, paddingBottom: 10 }}
+      style={{ backgroundColor: "#F3D031", paddingTop: 10, paddingBottom: 30 }}
     >
       <Text
         style={{
-          fontSize: 32,
+          fontSize: 18,
           color: "#111111",
           textAlign: "center",
           fontWeight: "bold",
         }}
       >
-        Little Lemon
+        All Rights Reserved by Little Lemon, 2024
       </Text>
     </View>
   );
