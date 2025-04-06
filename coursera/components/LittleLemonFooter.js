@@ -1,7 +1,7 @@
 import * as React from "react";
 import { View, Text } from "react-native";
 
-export default function LittleLemonHeader() {
+export default function LittleLemonFooter() {
   return (
     <View
       style={{ backgroundColor: "#F3D031", paddingTop: 10, paddingBottom: 30 }}
