@@ -1,8 +1,6 @@
 import React from "react";
 import { View, Text, ScrollView } from "react-native";
-
-const green = "#495E57";
-const yellow = "#F4CE14";
+import { menuItemsStyles } from "./Styles";
 
 const menuItems = [
   "Hummus \nMoutabal \nFalafel \nMarinated Olives \nKofta \nEggplant Salad \nLentil Burger \nSmoked Salmon \nKofta Burger \nTurkish Kebab \nFries \nButtered Rice \nSpinach Pie",
@@ -10,16 +8,14 @@ const menuItems = [
 
 export default function MenuItems() {
   return (
-    <View style={{ flex: 1 }}>
+    <View style={menuItemsStyles.container}>
       <ScrollView
-        horizontal={true}
+        horizontal={false}
         indicatorStyle="white"
-        style={{ padding: 20, backgroundColor: green }}
+        style={menuItemsStyles.innerContainer}
       >
-        <Text style={{ fontSize: 40, flexWrap: "wrap", color: "white" }}>
-          View Menu
-        </Text>
-        <Text style={{ fontSize: 24, color: "white" }}>{menuItems[0]}</Text>
+        <Text style={menuItemsStyles.headerText}>View Menu</Text>
+        <Text style={menuItemsStyles.itemText}>{menuItems[0]}</Text>
       </ScrollView>
     </View>
   );
